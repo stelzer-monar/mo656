@@ -20,13 +20,6 @@
     "tok2vec":[
 
     ],
-    "parser":[
-      "ROOT",
-      "dep"
-    ],
-    "sentencizer":[
-
-    ],
     "ner":[
       "ACTION",
       "DRUG",
@@ -36,53 +29,48 @@
   },
   "pipeline":[
     "tok2vec",
-    "parser",
-    "sentencizer",
     "ner"
   ],
   "components":[
     "tok2vec",
-    "parser",
-    "sentencizer",
     "ner"
   ],
   "disabled":[
 
   ],
   "performance":{
-    "dep_uas":0.0,
-    "dep_las":0.0,
-    "dep_las_per_type":0.0,
-    "sents_p":0.0,
-    "sents_r":0.0,
-    "sents_f":0.0,
-    "ents_f":0.7407407407,
-    "ents_p":0.75,
-    "ents_r":0.7317073171,
+    "ents_f":0.9512195122,
+    "ents_p":0.9512195122,
+    "ents_r":0.9512195122,
     "ents_per_type":{
       "DRUG":{
         "p":0.8333333333,
         "r":1.0,
         "f":0.9090909091
       },
-      "ACTION":{
-        "p":0.7333333333,
-        "r":1.0,
-        "f":0.8461538462
-      },
       "INGREDIENT":{
-        "p":0.6666666667,
-        "r":0.5,
-        "f":0.5714285714
+        "p":0.9230769231,
+        "r":1.0,
+        "f":0.96
       },
       "USE":{
-        "p":0.8,
-        "r":0.6153846154,
-        "f":0.6956521739
+        "p":1.0,
+        "r":0.9230769231,
+        "f":0.96
+      },
+      "ACTION":{
+        "p":1.0,
+        "r":0.9090909091,
+        "f":0.9523809524
       }
     },
-    "tok2vec_loss":0.0000002125,
-    "parser_loss":0.0,
-    "ner_loss":0.0000000815
+    "dep_uas":0.0,
+    "dep_las":0.0,
+    "dep_las_per_type":0.0,
+    "sents_p":0.0,
+    "sents_r":0.0,
+    "sents_f":0.0,
+    "tok2vec_loss":73.4522164911,
+    "ner_loss":15.7389776631
   }
 }
