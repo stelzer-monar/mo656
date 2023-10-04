@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="newOntology"
+         xmlns="newOntology#">
+
+<owl:Ontology rdf:about="newOntology"/>
+
+<owl:ObjectProperty rdf:about="#isComposedOf">
+  <rdfs:domain rdf:resource="#Drug"/>
+  <rdfs:range rdf:resource="#Ingredient"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isUsedFor">
+  <rdfs:domain rdf:resource="#Drug"/>
+  <rdfs:range rdf:resource="#Use"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#actAs">
+  <rdfs:domain rdf:resource="#Drug"/>
+  <rdfs:range rdf:resource="#Action"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Drug">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ingredient">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Action">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Use">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#doril">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#Dipirona"/>
+  <actAs rdf:resource="#analgésico"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <isComposedOf rdf:resource="#dipirona"/>
+  <isUsedFor rdf:resource="#dor de cabeça"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dipirona">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#analgésico">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dor">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dipirona">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dor de cabeça">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
