@@ -12,6 +12,8 @@ from spacy.util import compile_infix_regex
 import re
 import spacy
 
+import random
+
 nlp = spacy.blank("pt")
 # Create a blank Tokenizer with just the English vocab
 
@@ -25,11 +27,12 @@ MAP_LABELS = {
 }
 
 ann = "dataset/final_annotation.json"
+total_file='0.spacy'
 train_file='1.spacy'
 dev_file='2.spacy'
 test_file='3.spacy'
 
-def main(json_loc: Path, train_file: Path, dev_file: Path, test_file: Path):
+def main(json_loc: Path, train_file: Path, dev_file: Path, test_file: Path, total_file: Path):
     """Creating the corpus from the Prodigy annotations."""
     Doc.set_extension("rel", default={},force=True)
     vocab = Vocab()
@@ -108,10 +111,28 @@ def main(json_loc: Path, train_file: Path, dev_file: Path, test_file: Path):
     print(len(docs["total"]))
     print(docs["total"])
     docbin = DocBin(docs=docs["total"], store_user_data=True)
+    docbin.to_disk(total_file)
+
+    for i in range(len(docs["total"])-1, 0, -1):
+        j = random.randint(0, i + 1)
+        docs["total"][i], docs["total"][j] = docs["total"][j], docs["total"][i]
+
+    print(docs["total"])
+    docs["train"] = docs["total"][:24]
+    docs["test"] = docs["total"][24:29]
+    docs["dev"] = docs["total"][29:]
+
+    docbin = DocBin(docs=docs["train"], store_user_data=True)
     docbin.to_disk(train_file)
+    docbin = DocBin(docs=docs["test"], store_user_data=True)
+    docbin.to_disk(test_file)
+    docbin = DocBin(docs=docs["dev"], store_user_data=True)
+    docbin.to_disk(dev_file)
+
     msg.info(
-        f"{len(docs['total'])} training sentences"
+        f"{len(docs['total'])} training sentences\t\n{len(docs['train'])} train sentences\t\n{len(docs['test'])} test sentences\t\n{len(docs['dev'])} dev sentences"
     )
 
 
-main(ann, train_file, dev_file, test_file)
+
+main(ann, train_file, dev_file, test_file, total_file)

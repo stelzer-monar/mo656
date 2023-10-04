@@ -1,0 +1,27 @@
+train_cpu:
+  cmd: python -m spacy run train_cpu
+  script:
+    - python -m spacy train configs/rel_tok2vec.cfg --output training --paths.train
+      data/1.spacy --paths.dev data/2.spacy -c ./scripts/custom_functions.py
+  deps:
+    - path: data/1.spacy
+      md5: 7e5be25c9773768a22e76de9ece14bd9
+    - path: data/2.spacy
+      md5: 56a8eb54beaabec81d59c43735b81986
+  outs:
+    - path: training/model-best
+      md5: d094613ac88fcc4859b8651bdb3d38f1
+  spacy_version: 3.6.1
+  spacy_git_version: 458bc5f45
+evaluate:
+  cmd: python -m spacy run evaluate
+  script:
+    - python ./scripts/evaluate.py training/model-best data/3.spacy False
+  deps:
+    - path: training/model-best
+      md5: d094613ac88fcc4859b8651bdb3d38f1
+    - path: data/3.spacy
+      md5: 871df8dccc88ef5aaae83cf6afdd4404
+  outs: []
+  spacy_version: 3.6.1
+  spacy_git_version: 458bc5f45
