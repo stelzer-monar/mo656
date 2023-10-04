@@ -1,48 +1,54 @@
-import random 
-
-import typer 
-
-from pathlib import Path 
-
 import spacy 
-from spacy.tokens import DocBin, Doc 
+from owlready2 import *
 
-from spacy.training.example import Example 
-from rel_component.scripts.rel_pipe import make_relation_extractor, score_relations 
-from rel_component.scripts.rel_model import create_relation_model, create_classification_layer, create_instances, create_tensors
+onto = get_ontology("newOntology")
 
-#We load the relation extraction (REL) model
+with onto:
+  class Drug(Thing):
+    pass
+  class Ingredient(Thing):
+    pass
+  class Action(Thing):
+    pass
+  class Use(Thing):
+    pass
+  class isComposedOf(ObjectProperty):
+    domain    = [Drug]
+    range     = [Ingredient]
+  class isUsedFor(ObjectProperty):
+    domain    = [Drug]
+    range     = [Use]
+  class actAs(ObjectProperty):
+    domain    = [Drug]
+    range     = [Action]
 
-nlp2 = spacy.load("./rel_component/training/model-best")
 
 nlp = spacy.load("./ner_component/output/model-best")
 text = [
 '''
     Dipirona é um ótimo analgésico para combater a dor.
-    doril contém dipiron e é indicado para dor de cabeça.
+    doril contém dipirona e é indicado para dor de cabeça.
 '''
 ]
 
+entities = {}
+
+drug = Drug("doril")
 for doc in nlp.pipe(text, disable=["tagger"]):
-    print([(ent.text, ent.label_) for ent in doc.ents])
+  for ent in doc.ents:
+    print(ent.text, ent.label_)
+    if ent.label_ == "INGREDIENT":
+      if ent.text not in entities:
+        entities[ent.text] = Ingredient(ent.text)
+      drug.isComposedOf.append(entities[ent.text])
+    elif ent.label_ == "ACTION":
+      if ent.text not in entities:
+        entities[ent.text] = Action(ent.text)
+      drug.actAs.append(entities[ent.text])
+    elif ent.label_ == "USE":
+      if ent.text not in entities:
+        entities[ent.text] = Use(ent.text)
+      drug.isUsedFor.append(entities[ent.text])
+  #print([(ent.text, ent.label_) ])
 
-#We take the entities generated from the NER pipeline and input them to the REL pipeline
-
-for name, proc in nlp2.pipeline:
-   doc = proc(doc)
-
-#Here, we split the paragraph into sentences and apply the relation extraction for each pair of entities found in each sentence.
-
-for value, rel_dict in doc._.rel.items(): 
-
- for sent in doc.sents:
-
-   for e in sent.ents:
-
-     for b in sent.ents:
-
-       if e.start == value[0] and b.start == value[1]:
-
-         if rel_dict['EXPERIENCE_IN'] >=0.9 :
-
-            print(f" entities: {e.text, b.text} --> predicted relation: {rel_dict}")
+onto.save(file = "ontology.owl")
