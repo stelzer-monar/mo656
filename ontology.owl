@@ -39,32 +39,532 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
-<owl:NamedIndividual rdf:about="#doril">
+<owl:NamedIndividual rdf:about="#dorflex">
   <rdf:type rdf:resource="#Drug"/>
-  <isComposedOf rdf:resource="#Dipirona"/>
-  <actAs rdf:resource="#analgésico"/>
-  <isUsedFor rdf:resource="#dor"/>
   <isComposedOf rdf:resource="#dipirona"/>
+  <isComposedOf rdf:resource="#citrato  "/>
+  <isComposedOf rdf:resource="#cafeína"/>
+  <isUsedFor rdf:resource="#+"/>
+  <isComposedOf rdf:resource="#dipirona monoidratada"/>
+  <isComposedOf rdf:resource="#citrato de orfenadrina"/>
+  <actAs rdf:resource="#amido"/>
+  <isComposedOf rdf:resource="#estearato de magnésio"/>
+  <isUsedFor rdf:resource="#dor"/>
   <isUsedFor rdf:resource="#dor de cabeça"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#Dipirona">
-  <rdf:type rdf:resource="#Ingredient"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#analgésico">
-  <rdf:type rdf:resource="#Action"/>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#dor">
-  <rdf:type rdf:resource="#Use"/>
+  <actAs rdf:resource="#analgésica"/>
+  <actAs rdf:resource="#relaxante muscular"/>
+  <isUsedFor rdf:resource="#fórmula"/>
+  <actAs rdf:resource="#analgésicos"/>
+  <isUsedFor rdf:resource="#derivados de pirazolonas"/>
+  <isUsedFor rdf:resource="#fenilbutazona"/>
+  <isUsedFor rdf:resource="#grave"/>
+  <isUsedFor rdf:resource="#fraqueza"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#dipirona">
   <rdf:type rdf:resource="#Ingredient"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#citrato  ">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cafeína">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#+">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dipirona monoidratada">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#citrato de orfenadrina">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#amido">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#estearato de magnésio">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dor">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#dor de cabeça">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#analgésica">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#relaxante muscular">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fórmula">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#analgésicos">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#derivados de pirazolonas">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fenilbutazona">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#grave">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fraqueza">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#apracur">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#maleato de clofeniramina"/>
+  <isComposedOf rdf:resource="#ácido ascórbico"/>
+  <isComposedOf rdf:resource="#dipirona monoidratada"/>
+  <isComposedOf rdf:resource="#maleato de clorfeniramina"/>
+  <isUsedFor rdf:resource="#revestidos"/>
+  <actAs rdf:resource="#arábica"/>
+  <isComposedOf rdf:resource="#earato de magnésio"/>
+  <isComposedOf rdf:resource="#metacrilato"/>
+  <isUsedFor rdf:resource="#gripe"/>
+  <isUsedFor rdf:resource="#dores de cabeça"/>
+  <isUsedFor rdf:resource="#febre"/>
+  <actAs rdf:resource="#analgésicos"/>
+  <actAs rdf:resource="#antipiréticos"/>
+  <actAs rdf:resource="#analgésicas"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <isUsedFor rdf:resource="#réticas"/>
+  <actAs rdf:resource="#antialérgicas"/>
+  <isUsedFor rdf:resource="#fórmula"/>
+  <isUsedFor rdf:resource="#glicose-6-fo"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#maleato de clofeniramina">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ácido ascórbico">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#maleato de clorfeniramina">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#revestidos">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#arábica">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#earato de magnésio">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#metacrilato">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gripe">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dores de cabeça">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#febre">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#antipiréticos">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#analgésicas">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#réticas">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#antialérgicas">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#glicose-6-fo">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#benegrip">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#dipirona monoidratada"/>
+  <isComposedOf rdf:resource="#maleato de clorfeniramina"/>
+  <isComposedOf rdf:resource="#cafeína"/>
+  <isUsedFor rdf:resource="#revestidos"/>
+  <isComposedOf rdf:resource="#dipirona"/>
+  <isComposedOf rdf:resource="#maleato de clorfeniramina2"/>
+  <actAs rdf:resource="#alumínio"/>
+  <isUsedFor rdf:resource="#gripes"/>
+  <isUsedFor rdf:resource="#resfriados"/>
+  <isUsedFor rdf:resource="#dores de cabeça"/>
+  <isUsedFor rdf:resource="#febre"/>
+  <actAs rdf:resource="#analgésico"/>
+  <actAs rdf:resource="#antipirético"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#maleato de clorfeniramina2">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#alumínio">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gripes">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#resfriados">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#analgésico">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#antipirético">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#doralgina">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#dipirona"/>
+  <isComposedOf rdf:resource="#mucato de isometepteno"/>
+  <isComposedOf rdf:resource="#cafeína"/>
+  <actAs rdf:resource="#armacêutica"/>
+  <isComposedOf rdf:resource="#dipirona  "/>
+  <actAs rdf:resource="#arábica"/>
+  <isComposedOf rdf:resource="#carbonato de  "/>
+  <actAs rdf:resource="#analgésica"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <actAs rdf:resource="#antiespasmódica"/>
+  <isUsedFor rdf:resource="#dor de cabeça"/>
+  <isUsedFor rdf:resource="#cólicas"/>
+  <isComposedOf rdf:resource="#isometepteno"/>
+  <actAs rdf:resource="#analgésico"/>
+  <actAs rdf:resource="#antiespasmódico"/>
+  <actAs rdf:resource="#estimulante"/>
+  <isUsedFor rdf:resource="#dores de cabeça"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mucato de isometepteno">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#armacêutica">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dipirona  ">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#carbonato de  ">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#antiespasmódica">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cólicas">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#isometepteno">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#antiespasmódico">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#estimulante">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#miorrelax">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#dipirona monoidratada"/>
+  <isComposedOf rdf:resource="#citrato de orfenadrina"/>
+  <isComposedOf rdf:resource="#cafeína"/>
+  <isUsedFor rdf:resource="#química"/>
+  <isUsedFor rdf:resource="#farmacêutica"/>
+  <isUsedFor rdf:resource="#+"/>
+  <isComposedOf rdf:resource="#feína"/>
+  <isComposedOf rdf:resource="#dipirona"/>
+  <isComposedOf rdf:resource="#dióxido de silício"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <isUsedFor rdf:resource="#dor de cabeça"/>
+  <actAs rdf:resource="#analgésica"/>
+  <actAs rdf:resource="#relaxante muscular"/>
+  <isUsedFor rdf:resource="#fórmula"/>
+  <actAs rdf:resource="#analgésicos"/>
+  <isUsedFor rdf:resource="#dipi"/>
+  <actAs rdf:resource="#rona"/>
+  <isUsedFor rdf:resource="#derivados de pirazolonas"/>
+  <isUsedFor rdf:resource="#fenilbutazona"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#química">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#farmacêutica">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#feína">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dióxido de silício">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dipi">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rona">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#aspirina">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#ácido  "/>
+  <isUsedFor rdf:resource="#dores"/>
+  <isUsedFor rdf:resource="#dor de cabeça"/>
+  <isUsedFor rdf:resource="#dor de garganta"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <isUsedFor rdf:resource="#febre"/>
+  <isUsedFor rdf:resource="#resfriados"/>
+  <isUsedFor rdf:resource="#gripes"/>
+  <actAs rdf:resource="#analgésica"/>
+  <actAs rdf:resource="#antitérmica"/>
+  <isComposedOf rdf:resource="#ácido acetilsalicílico"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ácido  ">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dores">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dor de garganta">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#antitérmica">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ácido acetilsalicílico">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#maxalgina">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#dipirona monoidratada"/>
+  <isComposedOf rdf:resource="#dipirona"/>
+  <isComposedOf rdf:resource="#ácido ascórbico"/>
+  <actAs rdf:resource="#rante"/>
+  <isComposedOf rdf:resource="#ácido clorídrico"/>
+  <actAs rdf:resource="#analgésico"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <actAs rdf:resource="#antitérmico"/>
+  <isUsedFor rdf:resource="#febre"/>
+  <isUsedFor rdf:resource="#dipirona"/>
+  <isUsedFor rdf:resource="#formulaçã"/>
+  <isUsedFor rdf:resource="#fenazona"/>
+  <isUsedFor rdf:resource="#fenilbutazona"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rante">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ácido clorídrico">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#antitérmico">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#formulaçã">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fenazona">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#neosaldina">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#dipirona"/>
+  <isComposedOf rdf:resource="#mucato de isometepteno"/>
+  <isComposedOf rdf:resource="#cafeína"/>
+  <isUsedFor rdf:resource="#revestidos"/>
+  <isComposedOf rdf:resource="#carbonato de cálcio"/>
+  <isUsedFor rdf:resource="#dióxido de titânio"/>
+  <actAs rdf:resource="#analgésica"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <actAs rdf:resource="#antiespasmódica"/>
+  <isUsedFor rdf:resource="#dor de cabeça"/>
+  <isUsedFor rdf:resource="#cólicas"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#carbonato de cálcio">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dióxido de titânio">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lisador">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#dipirona"/>
+  <isComposedOf rdf:resource="#cloridrato de prometazina"/>
+  <isComposedOf rdf:resource="#cloridrato de adifenina"/>
+  <isComposedOf rdf:resource="#cloridrato  "/>
+  <isUsedFor rdf:resource="#dolorosas"/>
+  <actAs rdf:resource="#antipirético"/>
+  <isUsedFor rdf:resource="#febris"/>
+  <isUsedFor rdf:resource="#cólicas"/>
+  <isUsedFor rdf:resource="#dores de cabeça"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <actAs rdf:resource="#relaxante"/>
+  <isUsedFor rdf:resource="#febre"/>
+  <actAs rdf:resource="#analgésico"/>
+  <isUsedFor rdf:resource="#fórmula"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cloridrato de prometazina">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cloridrato de adifenina">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cloridrato  ">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dolorosas">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#febris">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#relaxante">
+  <rdf:type rdf:resource="#Action"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#novalgina">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#dipirona monoidratada"/>
+  <actAs rdf:resource="#farmacêutica"/>
+  <isComposedOf rdf:resource="#dipirona  "/>
+  <isComposedOf rdf:resource="#bicarbonato de sódio"/>
+  <isComposedOf rdf:resource="#ácido cítrico"/>
+  <isComposedOf rdf:resource="#carbonato de sódio"/>
+  <actAs rdf:resource="#analgésico"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <actAs rdf:resource="#antitérmico"/>
+  <isUsedFor rdf:resource="#febre"/>
+  <isComposedOf rdf:resource="#dipirona"/>
+  <isUsedFor rdf:resource="#dipirona"/>
+  <isUsedFor rdf:resource="#fenazona"/>
+  <isUsedFor rdf:resource="#fenilbutazona"/>
+  <isUsedFor rdf:resource="#dos"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bicarbonato de sódio">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ácido cítrico">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#carbonato de sódio">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dos">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#doril">
+  <rdf:type rdf:resource="#Drug"/>
+  <isComposedOf rdf:resource="#ácido acetilsalicílico"/>
+  <isComposedOf rdf:resource="#cafeína"/>
+  <isComposedOf rdf:resource="#®"/>
+  <actAs rdf:resource="#analgésico"/>
+  <actAs rdf:resource="#antipirético"/>
+  <isUsedFor rdf:resource="#dores"/>
+  <isUsedFor rdf:resource="#febre"/>
+  <isUsedFor rdf:resource="#dor de cabeça"/>
+  <isUsedFor rdf:resource="#dor"/>
+  <isUsedFor rdf:resource="#açã"/>
+  <actAs rdf:resource="#analgésica"/>
+  <actAs rdf:resource="#estimulante"/>
+  <isUsedFor rdf:resource="#dores de cabeça"/>
+  <isUsedFor rdf:resource="#fórmu"/>
+  <isUsedFor rdf:resource="#dispepsias"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#®">
+  <rdf:type rdf:resource="#Ingredient"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#açã">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fórmu">
+  <rdf:type rdf:resource="#Use"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dispepsias">
   <rdf:type rdf:resource="#Use"/>
 </owl:NamedIndividual>
 
